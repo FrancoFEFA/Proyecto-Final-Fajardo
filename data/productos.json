@@ -1,0 +1,5 @@
+[
+  { "nombre": "Manzana", "precio": 100, "categoria": "frutas" },
+  { "nombre": "Lechuga", "precio": 80, "categoria": "verduras" },
+  { "nombre": "Detergente", "precio": 300, "categoria": "limpieza" }
+]

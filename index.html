@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Simulador de Productos - Pollos Hermanos</title>
+<link rel="stylesheet" href="css/estilos.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+<h1>Verdulería Pollos Hermanos</h1>
+
+<!-- Filtros para mostrar productos por categoría -->
+<section class="filtros">
+<h3>Filtrar por categoría:</h3>
+<button id="btnTodos" class="filtro-activo">Todos</button>
+<button id="btnVerduras" class="filtro">Verduras</button>
+<button id="btnFrutas" class="filtro">Frutas</button>
+<button id="btnLimpieza" class="filtro">Limpieza</button>
+<button id="btnOtros" class="filtro">Otros</button>
+</section>
+
+<!-- Formulario para agregar productos -->
+<section class="formulario">
+<input id="nombreProducto" type="text" placeholder="Nombre del producto" required minlength="3" maxlength="50">
+<input id="precioProducto" type="number" placeholder="Precio" required min="0.01" step="0.01">
+
+<!-- Categoría del producto -->
+<select id="categoriaProducto" required>
+<option value="">-- Seleccionar categoría --</option>
+<option value="verduras">Verduras</option>
+<option value="frutas">Frutas</option>
+<option value="limpieza">Limpieza</option>
+<option value="otros">Otros</option>
+</select>
+
+<!-- Botón para agregar el producto -->
+<button id="btnAgregar">Agregar producto</button>
+<div id="erroresFormulario" class="errores-form"></div>
+</section>
+
+<h2>Lista de productos</h2>
+
+<div id="totalProductos"></div>
+<div id="totalesCategoria"></div>
+<div id="listaProductos"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
